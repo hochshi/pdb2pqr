@@ -659,6 +659,35 @@ class LYS(Amino):
             self.ffname = "LYN"
         Amino.set_state(self)
 
+class KCX(Amino):
+    """Lysine class."""
+
+    def __init__(self, atoms, ref):
+        """Initialize object.
+
+        :param atoms:  A list of :class:`Atom` objects to be stored in this
+            object
+        :type atoms:  [Atom]
+        :param ref:  The reference object for the amino acid.
+            Used to convert from the alternate naming scheme to the main naming
+            scheme.
+        :type ref:  Residue
+        """
+        Amino.__init__(self, atoms, ref)
+        self.reference = ref
+
+    def letter_code(self):
+        """Return letter code for amino acid.
+
+        :return:  amino acid 1-letter code
+        :rtype:  str
+        """
+        return "X"
+
+    def set_state(self):
+        """Set forcefield name based on current titration state."""
+        Amino.set_state(self)
+
 
 class MET(Amino):
     """Methionine class."""
