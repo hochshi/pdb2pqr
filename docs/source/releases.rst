@@ -6,6 +6,15 @@ Release history
 Current version
 ***************
 
+Fixes
+=====
+
+* Updated Sphinx versions (`#384 <https://github.com/Electrostatics/pdb2pqr/issues/384>`_)
+
+******************
+3.6.2 (2023-12-31)
+******************
+
 Changes
 =======
 
@@ -14,7 +23,14 @@ Changes
 Fixes
 =====
 
-* Fixed broken link in documentation (`#363 <https://github.com/Electrostatics/pdb2pqr/issues/363>`_)
+* Fixed problem locating files with editable installations (`#6 <https://github.com/Electrostatics/pdb2pqr/issues/6>`_)
+* Fixed broken links in documentation (`#363 <https://github.com/Electrostatics/pdb2pqr/issues/363>`_)
+
+Known issues
+============
+
+* There is a confirmed issue with naming using the CHARMM force field for uncommon protonation states (`#358 <https://github.com/Electrostatics/pdb2pqr/issues/358>`_)
+* There is a potential problem adding hydrogens to non-experimental computer-generated structures (`#365 <https://github.com/Electrostatics/pdb2pqr/issues/375>`_)
 
 ******************
 3.6.1 (2023-03-12)
