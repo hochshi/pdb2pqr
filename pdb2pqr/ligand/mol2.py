@@ -344,9 +344,15 @@ class Mol2Molecule:
 
     def assign_charges(self):
         """Assign charges to atoms in molecule."""
+        need_eq = False
         for atom in self.atoms.values():
+            if atom.mol2charge is not None:
+                atom.charge = atom.mol2charge
+                continue
             atom.charge = atom.formal_charge
-        peoe.equilibrate(self.atoms.values())
+            need_eq = True
+        if need_eq:
+            peoe.equilibrate(self.atoms.values())
 
     def find_atom_torsions(self, start_atom):
         """Set the torsion angles that start with this atom (name).
