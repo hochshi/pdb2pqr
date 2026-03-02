@@ -150,6 +150,49 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     <applyto>LYS</applyto>
     <remove>HZ3</remove>
   </patch>
+    <patch>
+    <name>KCX</name>
+    <applyto>LYS</applyto>
+    <remove>HZ2</remove>
+    <remove>HZ3</remove>
+    <add>
+      <!-- Updated retained proton from SET_ICOOR 1HZ -60.50 60.01 0.970000 NZ CE CD -->
+      <atom>
+        <name>HZ1</name>
+        <x>2.061781</x>
+        <y>-4.147930</y>
+        <z>4.754727</z>
+        <bond>NZ</bond>
+      </atom>
+
+      <!-- Carbamate group from SET_ICOOR entries -->
+      <atom>
+        <name>CX</name>
+        <x>3.030041</x>
+        <y>-5.483576</y>
+        <z>4.165992</z>
+        <bond>NZ</bond>
+        <bond>OQ1</bond>
+        <bond>OQ2</bond>
+      </atom>
+      <atom>
+        <name>OQ1</name>
+        <x>3.986893</x>
+        <y>-5.625405</y>
+        <z>3.430123</z>
+        <bond>CX</bond>
+      </atom>
+      <atom>
+        <name>OQ2</name>
+        <x>2.908845</x>
+        <y>-6.247369</y>
+        <z>5.267940</z>
+        <bond>CX</bond>
+      </atom>
+
+      <dihedral>CD CE NZ CX</dihedral>
+    </add>
+  </patch>
   <patch>
     <name>TYM</name>
     <applyto>TYR</applyto>

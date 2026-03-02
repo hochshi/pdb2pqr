@@ -23,6 +23,17 @@
      </atom>
   </residue>
   <residue>
+     <name>KCX</name>
+     <atom>
+        <name>HZ</name>
+        <useatomname>HZ1</useatomname>
+     </atom>
+     <atom>
+        <name>CY</name>
+        <useatomname>CX</useatomname>
+     </atom>
+  </residue>
+  <residue>
      <name>N...$</name>
      <atom>
        <name>H</name>

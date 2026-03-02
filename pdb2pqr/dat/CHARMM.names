@@ -101,6 +101,17 @@
         <useresname>CYS</useresname>
     </residue>
     <residue>
+        <name>KCX</name>
+        <atom>
+            <name>HZ</name>
+            <useatomname>HZ1</useatomname>
+        </atom>
+        <atom>
+            <name>CY</name>
+            <useatomname>CX</useatomname>
+        </atom>
+    </residue>
+    <residue>
         <name>CYX</name>
         <useresname>DISU</useresname>
         <atom>
